@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__menu-item {
+    margin-right: 82px;
+}
+
+.header__menu-item:last-child {
+    margin-right: 0;
+}
+
+.header__menu-link {
+    font-size: 18px;
+    line-height: 133%;
+    color: #FFFFFF;
+}
+
+.header__menu-link:focus, .header__menu-link:active, .header__menu-link:hover {
+    cursor: pointer;
+    opacity: 0.75;
+}
+
