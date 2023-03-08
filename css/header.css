@@ -4,6 +4,7 @@
     top: 0;
     width: 100%;
     z-index: 2;
+    transition: .2s linear;
 }
 
 .header__wrapper {
@@ -36,5 +37,11 @@
 .header__menu-link:focus, .header__menu-link:active, .header__menu-link:hover {
     cursor: pointer;
     opacity: 0.75;
+}
+
+.header_scroll {
+    background: #0E1D28;
+    z-index: 50;
+    padding-bottom: 20px;
 }
 
