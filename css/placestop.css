@@ -1,0 +1,73 @@
+.places__top {
+    margin-bottom: 86px;
+}
+
+.places__top_title {
+    margin-bottom: 54px;
+}
+.places__top_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.places__top_card-wrap {
+    position: relative;
+    margin-bottom: 45px;
+}
+.places__top_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 57px;
+}
+
+.places__top_card-stats {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(21, 24, 36, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 16px 25px;
+}
+
+.places__top_card-title {
+    font-size: 18px;
+    line-height: 133% ;
+    margin: 0 auto 0 0;
+}
+
+.places__top_card-likes {
+    line-height: 150% ;
+    padding-right: 20px;
+    background: url(../img/heart.png) no-repeat right center;
+    margin-right: 14px;
+}
+
+.places__top_card-comments {
+    line-height: 150% ;
+    padding-right: 20px;
+    background: url(../img/comment.png) no-repeat right center;
+}
+
+.places__top_description {
+    line-height: 150% ;
+    margin-bottom: 31px;
+}
+.places__top_link {
+    display: inline-block;
+    width: 118px;
+    line-height: 118%;
+    color: #FFFFFF;
+    padding: 12px 19px;
+    background: #006DFE;
+    transition: ease .4s;
+    margin: auto 0 0 0;
+}
+.places__top_link:hover, .places__top_link:active, .places__top_link:focus {
+    background: #3a4655;
+}

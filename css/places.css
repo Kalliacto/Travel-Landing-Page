@@ -1,0 +1,92 @@
+.places {
+    margin-bottom: 131px;
+}
+.places__title {
+    margin-right: 20px;
+}
+.places__caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 36px;
+}
+
+.places__view-all {
+    display: inline-block;
+    line-height: 150%;
+    color: #006DFE;
+    padding-right: 59px;
+    background: url(../img/Shape.png) no-repeat right center;
+    transition: .2s ease;
+}
+
+.places__view-all:hover, .places__view-all:focus, .places__view-all:active {
+    opacity: .65;
+} 
+
+.places__cards  {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+.places__card {
+    position: relative;
+    overflow: hidden;
+}
+
+.places__card::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(21, 24, 36, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.places__card:hover .places__card_img {
+    transform: scale(1.05);
+}
+
+.places__card_size-lg {
+    grid-column: span 3;
+}
+.places__card_size-sm {
+    grid-column: span 2;
+}
+
+.places__card_img-size-lg {
+    height: 354px;
+}
+.places__card_img-size-sm {
+    height: 283px;
+}
+
+.places__card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s all;
+}
+
+.places__card_title {
+    position: absolute;
+    bottom: 27px;
+    left: 29px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+.places__card_link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}

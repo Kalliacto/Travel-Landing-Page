@@ -17,7 +17,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
     list-style: none;
@@ -67,4 +66,30 @@ html {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+}
+
+.wrapper__full {
+	max-width: 1264px;
+    margin: 0 auto;
+}
+
+.section__title {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 120%;
+	color: #102746;
+	position: relative;
+}
+
+.section__title::after {
+	content: '';
+	display: block;
+	width: 253px;
+	border-bottom: 2px solid #006DFE;
+	margin-top: 7px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
