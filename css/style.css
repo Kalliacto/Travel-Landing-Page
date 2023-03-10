@@ -66,11 +66,13 @@ html {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+	padding: 0 15px;
 }
 
 .wrapper__full {
 	max-width: 1264px;
     margin: 0 auto;
+	padding: 0 15px;
 }
 
 .section__title {

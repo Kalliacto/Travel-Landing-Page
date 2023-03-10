@@ -56,6 +56,7 @@
     color: #FFFFFF;
     background: #1B7DFF;
     transition: ease .4s;
+    margin: 10px 0;
 }
 
 .search-form__button:hover {
