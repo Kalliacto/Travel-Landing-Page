@@ -17,7 +17,8 @@
 .places__top_cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px;
+    grid-column-gap: 57px;
+    grid-row-gap: 57px;
 }
 
 .places__top_card-stats {
@@ -70,4 +71,38 @@
 }
 .places__top_link:hover, .places__top_link:active, .places__top_link:focus {
     background: #3a4655;
+}
+
+@media screen and (max-width: 960px) {
+    .places__top_title {
+        margin-bottom: 44px;
+    }
+    .places__top_cards {
+        grid-column-gap: 27px;
+        grid-row-gap: 27px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .places__top_title {
+        margin-bottom: 34px;
+    }
+    .places__top_cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .places__top_card-title {
+        font-size: 16px;
+    }
+    .places__top_card-wrap {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .places__top_cards {
+        grid-template-columns: 1fr;
+    }
+    .places__top_card-img {
+        width: 100%;
+    }
 }

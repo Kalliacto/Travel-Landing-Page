@@ -63,3 +63,38 @@
     cursor: pointer;
     background: #3a4655;
 }
+
+@media screen and (max-width: 960px) {
+    .search-form__field {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero {
+        padding-top: 200px;
+    }
+    .hero__title {
+        font-size: 42px;
+        line-height: 130%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .hero {
+        padding-top: 150px;
+        min-height: 0;
+        padding-bottom: 200px;
+    }
+    .search-form__field {
+        width: 100%;
+        margin-right: 0;
+    }
+    .hero__title {
+        font-size: 36px;
+    }
+    .search-form__button {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
